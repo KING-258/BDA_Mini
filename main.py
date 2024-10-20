@@ -11,6 +11,9 @@ newsapi = NewsApiClient(api_key='62a80a08966b4e7fb999ed2c930b1a52')
 gdelt_base_url = 'https://api.gdeltproject.org/api/v2/doc/doc?query='
 wikipedia_api_url = 'https://en.wikipedia.org/w/api.php'
 hdfs_client = InsecureClient('http://localhost:9870', user='hadoop')
+tmdb_api_key = '8c15697cde0071d132444cb3c1844392'
+tmdb_access_token = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4YzE1Njk3Y2RlMDA3MWQxMzI0NDRjYjNjMTg0NDM5MiIsInN1YiI6IjY3MTQ5Yjg5MGNiNjI1MmY5OTA4OWQyNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.647A_qhN5gEDArm_sxjgKqW8vDt57UeqebCp3VonI4o'
+openai_api_key = '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'
 
 def fetch_news_and_produce(phrase, producer):
     hdfs_path = f'/user/hadoop/news_data/{phrase.replace(" ", "_")}.json'
@@ -55,11 +58,11 @@ def fetch_news_and_produce(phrase, producer):
     except Exception as e:
         print(f"Error fetching from GDELT: {e}")
     try:
-        print(f"Fetching data for '{phrase}' from Wikipedia (within 3 minutes or 5 pages)...")
+        print(f"Fetching data for '{phrase}' from Wikipedia...")
         wikipedia_url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{phrase.replace(' ', '%20')}"
         page_count = 0
         while time.time() - start_time < 180 and page_count < 5:
-            wikipedia_response = requests.get(wikipedia_url, timeout=50)
+            wikipedia_response = requests.get(wikipedia_url, timeout=10)
             if wikipedia_response.status_code == 200:
                 wikipedia_data = wikipedia_response.json()
                 scraped_text += wikipedia_data.get('extract', '')
@@ -71,6 +74,40 @@ def fetch_news_and_produce(phrase, producer):
         print("Wikipedia fetching timed out.")
     except Exception as e:
         print(f"Error fetching from Wikipedia: {e}")
+    try:
+        print(f"Fetching movie information for '{phrase}' from TMDb...")
+        tmdb_url = f"https://api.themoviedb.org/3/search/movie?api_key={tmdb_api_key}&query={phrase}"
+        tmdb_response = requests.get(tmdb_url, timeout=10)
+        tmdb_data = tmdb_response.json()
+        if 'results' in tmdb_data and tmdb_data['results']:
+            for movie in tmdb_data['results']:
+                title = movie['title']
+                overview = movie['overview']
+                scraped_text += f"Movie: {title} Overview: {overview} "
+                articles.append({'title': title, 'url': f"https://www.themoviedb.org/movie/{movie['id']}"})
+        else:
+            print(f"No movie data found on TMDb for '{phrase}'.")
+    except requests.exceptions.Timeout:
+        print(f"TMDb fetching timed out after 10 seconds.")
+    try:
+        print(f"Fetching OpenAI-generated text for '{phrase}'...")
+        headers = {
+            'Authorization': f'Bearer {openai_api_key}',
+            'Content-Type': 'application/json',
+        }
+        openai_data = {
+            "model": "text-davinci-003",
+            "prompt": f"Generate a short description about '{phrase}'",
+            "max_tokens": 150,
+        }
+        openai_response = requests.post('https://api.openai.com/v1/completions', headers=headers, json=openai_data)
+        openai_text = openai_response.json().get('choices', [{}])[0].get('text', '')
+        if openai_text:
+            scraped_text += f"OpenAI Summary: {openai_text}"
+        else:
+            print(f"No OpenAI-generated text for '{phrase}'.")
+    except Exception as e:
+        print(f"Error fetching from OpenAI: {e}")
     if scraped_text:
         message = {
             'phrase': phrase,
@@ -87,21 +124,18 @@ def fetch_news_and_produce(phrase, producer):
             print(f"Error writing to HDFS: {e}")
     else:
         print(f"No data found for phrase '{phrase}' across all APIs.")
-
 def run_consumer():
     consumer = NewsConsumer('news_articles', 'news_group')
     consumer.consume_messages(time_limit=120, article_limit=100)
-
 if __name__ == "__main__":
     producer = NewsProducer()
     consumer_thread = threading.Thread(target=run_consumer)
     consumer_thread.start()
     print("Sentiment Analysis Tool")
-    print("Enter phrases to analyze, or 'quit' to exit.")
     try:
         while True:
-            phrase = input("\nEnter a phrase to analyze (or 'quit' to exit): ").strip()
-            if phrase.lower() == 'quit':
+            phrase = input("\nEnter a phrase to analyze (or 'q' to exit): ").strip()
+            if phrase.lower() == 'q':
                 break
             if phrase:
                 fetch_news_and_produce(phrase, producer)
