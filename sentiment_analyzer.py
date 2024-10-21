@@ -9,9 +9,11 @@ class SentimentAnalyzer:
             print(f"Error in sentiment analysis: {e}")
             return 0
     def categorize_sentiment(self, polarity):
-        if polarity > 0.05:
+        if polarity > 0.0:
             return 'positive'
-        elif polarity < -0.05:
+        elif polarity < 0.0:
             return 'negative'
-        else:
+        elif polarity == 0.0:
             return 'neutral'
+        else:
+            return 'Invalid'
