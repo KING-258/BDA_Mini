@@ -2258,5 +2258,213 @@
                 "url": "https://navbharattimes.indiatimes.com/state/rajasthan/jaipur/sikar-khatu-shyam-driver-conductor-beat-up-sudanese-students/articleshow/114381343.cms"
             }
         ]
+    },
+    "Rihanna": {
+        "phrase": "Rihanna",
+        "scraped_text": "Behind the scenes of Kemo Sabe, where celebrities pay up to $900 for custom cowboy hats Kemo Sabe, a luxury Western apparel store in Jackson, Wyoming, is known for its custom cowboy hats, seen on celebrities like Rihanna and Shania Twain. Taylor Swift is now the world's richest female musician \u2014 there's one key difference between her wealth and Rihanna's While musicians like Rihanna and Jay-Z have made their fortunes through side ventures, Taylor Swift has made her money largely from her music. ",
+        "sentiment": "neutral",
+        "polarity": -0.03714285714285715,
+        "articles": [
+            {
+                "title": "Behind the scenes of Kemo Sabe, where celebrities pay up to $900 for custom cowboy hats",
+                "url": "https://www.businessinsider.com/kemo-sabe-cowboy-hats-jackson-wyoming-2024-10"
+            },
+            {
+                "title": "Taylor Swift is now the world's richest female musician \u2014 there's one key difference between her wealth and Rihanna's",
+                "url": "https://www.businessinsider.com/taylor-swift-world-richest-female-musician-forbes-key-difference-rihanna-2024-10"
+            },
+            {
+                "title": "The Shade Room Founder Is Ready to Dial Down the Shade",
+                "url": "https://www.wired.com/story/dial-up-angie-nwandu-the-shade-room/"
+            },
+            {
+                "title": "Chris Brown concert shines spotlight on violence against women in South Africa",
+                "url": "https://www.bbc.com/news/articles/cyvy5l27de5o"
+            },
+            {
+                "title": "Edgar Wright\u2019s Glen Powell-Starring Running Man Is Indeed Coming in 2025",
+                "url": "https://gizmodo.com/running-man-remake-glen-powell-edgar-wright-release-date-2000507771"
+            },
+            {
+                "title": "Rihanna Wants GloRilla To Record Savage X Fenty Theme Song",
+                "url": "https://uproxx.com/music/rihanna-glorilla-savage-x-fenty-theme-song/"
+            },
+            {
+                "title": "\u0420\u0456\u0430\u043d\u043d\u0430 \u0437\u043d\u044f\u043b\u0430\u0441\u044c \u0443 \u044f\u0441\u043a\u0440\u0430\u0432\u0456\u0439 \u0431\u0456\u043b\u0438\u0437\u043d\u0456 \u0437 \u043c\u0435\u0440\u0435\u0436\u0438\u0432\u043e\u043c : \u0444\u043e\u0442\u043e",
+                "url": "https://gazeta.ua/articles/celebrities/_rianna-zdivuvala-erotichnoyu-fotosesiyeyu-z-duzhe-vidvertimi-pozami/1194657"
+            },
+            {
+                "title": "What perfume does Rihanna wear & where to buy the fragrance",
+                "url": "https://www.capitalxtra.com/news/rihanna-perfume-scent/"
+            },
+            {
+                "title": "  Im your biggest fan  - Rihanna tells Nigerian director , Dammy Twitch",
+                "url": "https://dailypost.ng/2024/09/17/im-your-biggest-fan-rihanna-tells-nigerian-director-dammy-twitch/"
+            },
+            {
+                "title": "\u0420\u0456\u0430\u043d\u043d\u0430 \u0437\u043d\u044f\u043b\u0430\u0441\u044c \u0434\u043b\u044f \u0436\u0443\u0440\u043d\u0430\u043b\u0443 Perfect | \u041d\u043e\u0432\u0438\u043d\u0438 \u043d\u0430 Gazeta . ua",
+                "url": "https://gazeta.ua/articles/celebrities/_zoloto-shipi-i-strazi-rianna-v-efektnih-obrazah-znyalas-dlya-glyancyu/1189847"
+            },
+            {
+                "title": "Rihanna Takes Break From Limelight to Play Photographer for Young Soccer Fan",
+                "url": "https://www.aceshowbiz.com/news/view/00229639.html"
+            },
+            {
+                "title": "ASAP Rocky and Rihanna Son Riot Turns 1 : See Rare Family Photos",
+                "url": "https://www.usmagazine.com/celebrity-moms/news/asap-rocky-and-rihannas-son-riot-turns-1-see-rare-family-photos/"
+            },
+            {
+                "title": "Rihanna duket mahnit\u00ebse , teksa pozon me t\u00eb brendshme nga koleksioni i saj i ri Savage X Fenty",
+                "url": "https://www.botasot.info/bota-e-yjeve-showbiz/2210593/rihanna-duket-mahnitese-teksa-pozon-me-te-brendshme-nga-koleksioni-i-saj-i-ri-savage-x-fenty/"
+            },
+            {
+                "title": "Rihanna Version of a Fall Coat ? A Fluffy Bathrobe Which She Wore Over Nothing Else . ",
+                "url": "https://www.harpersbazaar.com/celebrity/latest/a62241963/rihanna-custom-jacquemus-bathrobe-coat/"
+            },
+            {
+                "title": "Rihanna sizzles in bedazzled costume at Barbado Crop Over Festival",
+                "url": "https://pagesix.com/2024/08/05/style/rihanna-sizzles-in-bedazzled-costume-at-barbados-crop-over-festival/"
+            },
+            {
+                "title": "Rihanna Gets Cozy in Fuzzy Robe at Fenty Hair Launch in London",
+                "url": "https://www.usmagazine.com/stylish/news/rihanna-gets-cozy-in-fuzzy-robe-at-fenty-hair-launch-in-london/"
+            },
+            {
+                "title": "Rihanna new Madame Tussauds wax figure unveiled",
+                "url": "https://www.thenews.com.pk/latest/1233688-rihanna-to-have-his-own-wax-figure-at-madame-tussauds-london"
+            },
+            {
+                "title": "A Rihanna - Approved Fall Hairstyle ? Mid - Length Curls - Essence",
+                "url": "https://www.essence.com/beauty/hair-look-of-the-week-rihanna-mid-length-curls-fall/"
+            },
+            {
+                "title": "Rihanna sets fashion bar high in new outing at Los Angeles",
+                "url": "https://www.thenews.com.pk/latest/1240001-rihanna-sets-fashion-bar-high-in-new-outing-at-los-angeles"
+            },
+            {
+                "title": "Rihanna Wears Absolutely Nothing Underneath Her High - Fashion Bathrobe",
+                "url": "https://www.wmagazine.com/fashion/rihanna-white-robe-dress-gold-heels-fenty-hair-event-london"
+            },
+            {
+                "title": "First Look Rihanna Dior Parfum JAdore Campaign",
+                "url": "https://hypebeast.com/2024/8/rihanna-dior-parfum-j-adore-campaign-steven-klein-first-look"
+            },
+            {
+                "title": "Rihanna Gets Madame Tussauds Wax Figure in London : Photos",
+                "url": "https://www.billboard.com/music/music-news/rihanna-madame-tussauds-wax-figure-london-photos-1235783759/"
+            },
+            {
+                "title": "Rihanna tregon se si ka ndryshuar stili i saj q\u00eb kur \u00ebsht\u00eb b\u00ebr\u00eb n\u00ebn\u00eb",
+                "url": "https://www.botasot.info/bota-e-yjeve-showbiz/2244317/rihanna-tregon-se-si-ka-ndryshuar-stili-i-saj-qe-kur-eshte-bere-nene/"
+            },
+            {
+                "title": "Rihanna wears naked bodysuit for Barbados Crop Over festival",
+                "url": "https://www.harpersbazaar.com/uk/fashion/fashion-news/a61802653/rihanna-crop-over-festival-outfit/"
+            },
+            {
+                "title": "\u0420\u0438\u0430\u043d\u043d\u0430 \u0441\u043d\u044f\u043b\u0430\u0441\u044c \u0432 \u043d\u0438\u0436\u043d\u0435\u043c \u0431\u0435\u043b\u044c\u0435",
+                "url": "https://lenta.ru/news/2024/09/27/rianna-snyalas-v/"
+            },
+            {
+                "title": "Rihanna inappropriate tweet about 16 - year - old Justin Bieber resurfaces",
+                "url": "https://www.albawaba.com/entertainment/rihanna-inappropriate-tweet-about-16-1586617"
+            },
+            {
+                "title": "Rihanna Blings Up The Crop Over Festival 2024 In Barbados In A Fierce Gold Carnival Costume",
+                "url": "https://www.ndtv.com/lifestyle/at-crop-over-festival-in-barbados-rihanna-dazzles-straight-into-our-hearts-in-a-bejewelled-carnival-costume-6282328"
+            },
+            {
+                "title": "Jay - Z and Rihanna old clip sparks viral discussion on music industry dynamics",
+                "url": "https://tribune.com.pk/story/2500613/jay-z-and-rihannas-old-clip-sparks-viral-discussion-on-music-industry-dynamics"
+            },
+            {
+                "title": "\u0420\u0438\u0430\u043d\u043d\u0430 \u0441\u043d\u044f\u043b\u0430\u0441\u044c \u0432 \u0440\u0435\u043a\u043b\u0430\u043c\u043d\u043e\u0439 \u043a\u0430\u043c\u043f\u0430\u043d\u0438\u0438 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u0431\u0440\u0435\u043d\u0434\u0430 Savage X Fenty \u0438 Diesel",
+                "url": "https://www.sostav.ru/publication/rianna-snyalas-v-reklamnoj-kampanii-sobstvennogo-brenda-savage-x-fenty-i-diesel-70675.html"
+            },
+            {
+                "title": "Rhasidat Adeleke meets Rihanna at Fenty Hair event in London",
+                "url": "https://www.irishcentral.com/culture/entertainment/rhasidat-adeleke-rihanna"
+            },
+            {
+                "title": "Rihanna - Inselkind, Popstar, Nationalheldin",
+                "url": "https://www.themoviedb.org/movie/1315971"
+            },
+            {
+                "title": "Rihanna - Live at Made In America",
+                "url": "https://www.themoviedb.org/movie/685530"
+            },
+            {
+                "title": "Rihanna - iHeartRadio Music Festival",
+                "url": "https://www.themoviedb.org/movie/135306"
+            },
+            {
+                "title": "Rihanna: Rock in Rio",
+                "url": "https://www.themoviedb.org/movie/362725"
+            },
+            {
+                "title": "Rihanna - Good Girl Gone Bad Live",
+                "url": "https://www.themoviedb.org/movie/25924"
+            },
+            {
+                "title": "Rihanna: Live at BBC Radio 1's Big Weekend 2010",
+                "url": "https://www.themoviedb.org/movie/524160"
+            },
+            {
+                "title": "Rihanna - Tour in The World Ao Vivo Rock in Rio 2015",
+                "url": "https://www.themoviedb.org/movie/609592"
+            },
+            {
+                "title": "Rihanna: Live at Hackney Weekend 2012",
+                "url": "https://www.themoviedb.org/movie/119620"
+            },
+            {
+                "title": "Rihanna \u2013 The Loud Tour at Rock in Rio",
+                "url": "https://www.themoviedb.org/movie/100149"
+            },
+            {
+                "title": "Rihanna Live in Milan",
+                "url": "https://www.themoviedb.org/movie/79517"
+            },
+            {
+                "title": "Rihanna 777 Documentary... 7Countries7Days7Shows",
+                "url": "https://www.themoviedb.org/movie/225792"
+            },
+            {
+                "title": "Rihanna: Loud Tour Live At The O2",
+                "url": "https://www.themoviedb.org/movie/149776"
+            },
+            {
+                "title": "Rihanna - Live From Bell Centre In Montreal",
+                "url": "https://www.themoviedb.org/movie/41739"
+            },
+            {
+                "title": "Rihanna: 777 Tour Live From London 2012",
+                "url": "https://www.themoviedb.org/movie/1204165"
+            },
+            {
+                "title": "Rihanna - Live Full Concert",
+                "url": "https://www.themoviedb.org/movie/765373"
+            },
+            {
+                "title": "Rihanna: No Regrets",
+                "url": "https://www.themoviedb.org/movie/221777"
+            },
+            {
+                "title": "Rihanna - Rated R Launch Party",
+                "url": "https://www.themoviedb.org/movie/27241"
+            },
+            {
+                "title": "Untitled Rihanna Documentary",
+                "url": "https://www.themoviedb.org/movie/656615"
+            },
+            {
+                "title": "Untitled Lupita Nyong'o/Rihanna Project",
+                "url": "https://www.themoviedb.org/movie/552691"
+            },
+            {
+                "title": "Rihanna: Live at Rock In Rio Madrid",
+                "url": "https://www.themoviedb.org/movie/1118270"
+            }
+        ]
     }
 }
